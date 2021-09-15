@@ -21,4 +21,10 @@ function gimme(arr){
     return arr.indexOf(middleNum)
 }
 
+function gimme(arr){
+    const sortedArr = arr.slice(0).sort((a, b) => a - b)
+    const middleNum = sortedArr[1]
+    return arr.indexOf(middleNum)
+}
+
 console.log(gimme([5, 100, 14]))
